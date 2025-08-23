@@ -67,8 +67,11 @@ async function questionButton() {
     text2.classList.add("fade-in");
 }
 
-function goOutbutton() {
-    const button = document.getElementById("goout");
+function goOutButton() {
+    const button = document.getElementById("goout-no");
+    
+    button.style.setProperty("position", "absolute", "important");
+
     const btnWidth = button.offsetWidth;
     const btnHeight = button.offsetHeight;
 
@@ -78,7 +81,7 @@ function goOutbutton() {
     const randomX = Math.floor(Math.random() * maxX);
     const randomY = Math.floor(Math.random() * maxY);
 
-    button.style.left = randomX + "px";
-    button.style.top = randomY + "px";
+    button.style.setProperty("left", randomX + "px", "important");
+    button.style.setProperty("top", randomY + "px", "important");
 
 }
