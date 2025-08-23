@@ -1,4 +1,4 @@
 function whatButton() {
-    what = document.getElementById("what");
+    const what = document.getElementById("what");
     what.classList.add("d-none");
 }
